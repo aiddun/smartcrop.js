@@ -4,9 +4,9 @@
   "description": "Content aware image cropping.",
   "homepage": "https://github.com/jwagner/smartcrop.js",
   "author": "Jonas Wagner <jonas@29a.ch> (http://29a.ch/)",
-  "main": "./smartcrop",
+  "main": "./dist/smartcrop.js",
   "files": [
-    "smartcrop.js",
+    "dist",
     "index.d.ts"
   ],
   "devDependencies": {
@@ -40,6 +40,7 @@
   "scripts": {
     "start": "grunt",
     "test": "karma start karma.conf.js && npx tsc -noEmit test/types.ts",
-    "lint": "eslint smartcrop.js test examples/slideshow.js examples/testbed.js examples/testsuite.js examples/smartcrop-debug.js"
+    "lint": "eslint smartcrop.js test examples/slideshow.js examples/testbed.js examples/testsuite.js examples/smartcrop-debug.js",
+    "build": "tsc"
   }
 }
